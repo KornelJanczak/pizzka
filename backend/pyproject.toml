@@ -1,0 +1,19 @@
+[project]
+name = "pizzka-backend"
+version = "0.1.0"
+description = "FastAPI backend for Pizzka"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.115,<1.0",
+    "uvicorn[standard]>=0.30,<1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27,<1.0",
+    "pytest>=8,<9",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

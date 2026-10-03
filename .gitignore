@@ -1,0 +1,33 @@
+# Python environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.whl
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# Node.js dependencies and build output
+node_modules/
+.next/
+out/
+coverage/
+
+# Local environment and OS files
+.env*
+.DS_Store
+
+# TypeScript and package-manager logs
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
