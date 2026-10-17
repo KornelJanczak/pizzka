@@ -5,6 +5,7 @@ description = "FastAPI backend for Pizzka"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi[standard]>=0.115,<1.0",
+    "playwright>=1.64.0",
     "uvicorn[standard]>=0.30,<1.0",
 ]
 
@@ -17,3 +18,6 @@ dev = [
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]
+
+[tool.fastapi]
+entrypoint = "app.main:app"

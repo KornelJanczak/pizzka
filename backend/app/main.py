@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from app.routers.pyszne import router as pyszne_router
+
 
 class HealthResponse(BaseModel):
     status: str
@@ -11,6 +13,7 @@ class MessageResponse(BaseModel):
 
 
 app = FastAPI(title="Pizzka API", version="0.1.0")
+app.include_router(pyszne_router)
 
 
 @app.get("/", response_model=MessageResponse)
